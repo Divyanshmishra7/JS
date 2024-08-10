@@ -1,0 +1,18 @@
+/* h1{
+    font-size: large;
+    color: blue;
+} */
+
+#Hello {                                        /* # is use for styling uising the id name (getElementById("id_name"); */
+    font-size: large;           /* id should be unique but we can use same id for many items */
+    color:rgb(255, 0, 0) ;
+    background-color: blueviolet;
+    
+}
+
+.class {                       /* # is use for styling uising the class name (getElementByClassName("class_name"); */
+    font-size: large;   /* class can be use for multiple items */
+    color:rgb(255, 0, 0) ;
+    background-color: blueviolet;
+    
+}

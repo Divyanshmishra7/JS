@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Group Card with Blinking Border Animation</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @keyframes blinkingBorder {
+            0% {
+                border-color: #25d366;
+            }
+            50% {
+                border-color: transparent;
+            }
+            100% {
+                border-color: #25d366;
+            }
+        }
+
+        .group-card {
+            border: 2px solid #25d366;
+            padding: 10px;
+            border-radius: 5px;
+            animation: blinkingBorder 1s infinite;
+        }
+
+        .whatsapp-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .whatsapp-card a {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #25d366;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid #25d366;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .whatsapp-card a:hover {
+            background-color: #25d366;
+            color: #fff;
+        }
+
+        .whatsapp-card i {
+            margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="group-card whatsapp-card">
+        <span style="display: flex; align-items: center;">
+            <i class="fab fa-whatsapp" style="font-size:24px;color:#25d366;"></i>
+            <span style="font-weight: bold; margin-left: 10px; font-size: 0.9rem !important;">WhatsApp Group</span>
+        </span>
+        <a class="seoquake-nofollow" href="https://www.whatsapp.com/channel/0029Va4UN8U29757sLNagO25" rel="nofollow noopener noreferrer" target="_blank">
+            <i class="fab fa-whatsapp"></i> Join Now
+        </a>
+    </div>
+</body>
+</html>
